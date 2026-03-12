@@ -12,11 +12,21 @@ O objetivo foi simular um cenário de dados de uma plataforma de streaming semel
 
 Fluxo de dados:
 
-Dataset → BigQuery (RAW) → Transformações SQL → Camada Analítica → Views → Metabase Dashboard
+Dataset
+   ↓
+BigQuery (RAW Layer)
+   ↓
+SQL Transformations
+   ↓
+BigQuery (Analytical Layer)
+   ↓
+Analytical Views
+   ↓
+Metabase Dashboard
 
 ---
 
-## Tecnologias utilizadas
+## Stack do projeto
 
 - Google Cloud Platform (GCP)
 - BigQuery
